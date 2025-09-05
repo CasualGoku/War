@@ -27,6 +27,49 @@ h2 {
     width: 30%;
 }
 
+.winner {
+  flex-grow: 1;
+}
+
+button {
+  background-color: #4CAF50;
+  padding: 1rem;
+  margin: 1rem;
+  font-size: 1.3rem;
+  color: #fff;
+}
+
+span {
+  margin-left: 1rem;
+}
+
+.button:hover {
+  color: red;
+  cursor: pointer;
+}
+
+input {
+  margin: .5rem;
+  font-size: 2rem;
+  padding: .5px;
+  width: 8rem;
+}
+
+#submit {
+  padding: .5rem;
+  margin: .5rem;
+  width: 8rem;
+  cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
+
+p {
+  font-size: 1.2rem;
+}
+
 #draw {
     border: solid 2px #000;
     width: 8rem;
@@ -88,7 +131,7 @@ h2 {
 }
 
 .player {
-    border: solid 1px #000;
+    border: solid 5px #000;
     width: 15rem;
     height: 20rem;
     text-align: center;
