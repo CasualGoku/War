@@ -13,7 +13,7 @@
   <body>
 <header>
   <div class="logo">
-    <img src="./images/cherryBlossom.jpg" />
+    <img src="./images/EPIC.jpg" />
   </div> <!--class="logo"*-->
 </header>
   <div id="practice" style="font-size:2rem;"></div>
@@ -36,22 +36,22 @@
     </div> <!--class="flexColumn"*-->
     <div class="flex">
       <div id="player" class="flexColumn player">
-        <h1>Player</h1>
+        <h1 id="playerName">Player</h1>
           <div id="playerNumber" class="number">
           </div> <!-- __/\ *-->
           <div id="playerSuit" class="suit flex">
           </div> <!-- __/\ *-->
-          <h2 id="one" class="button hidden">Winner</h2>
       </div> <!--id="player"*-->
 
     <div class="flexColumn">
       <p id="compareDirections" class="hidden">Choose which player has the card that shows a greater amount.</p>
-      <p id="addDirections" class="hidden">Add the card amounts together.</p>
-      <p id="multiplyDirections" class="hidden">Multiply the card amounts together.</p>
+      <p id="addDirections" class="hidden">Player's card plus the Computer's card.</p>
+      <p id="multiplyDirections" class="hidden">Player's card times the Computer's card.</p>
       <p id="subtractDirections" class="hidden">Player's card minus the Computer's card.</p>
       <p id="integerDirections" class="hidden">Black is positive. Red is negative.</p>
+      <p id="faceCardDirections" class="hidden">Jack=11, Queen=12, King=13</p>
 
-      <input class="hidden" id="playerAnswer" type="number" alignment="left" size="6">
+      <input class="hidden" id="playerAnswer" type="number" size="6">
       
       <button class="hidden" id="submit">Check</button>
 
@@ -62,12 +62,11 @@
     </div> <!--class="flexColumn"-->
 
       <div id="computer" class="flexColumn player">
-        <h1>Computer</h1>
+        <h1 id="computerName">Computer</h1>
           <div id="computerNumber" class="number">
           </div> <!-- __/\ *-->
           <div id="computerSuit" class="suit flex">
           </div> <!-- __/\ *-->
-          <h2 id="two" class="button hidden">Winner</h2>
         </div> <!--id="computer"*-->
     </div> <!--class="flex"*-->
   </div> <!--id="gameBoard"*-->

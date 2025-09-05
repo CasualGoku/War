@@ -18,6 +18,9 @@ var $playerCount = $("#playerCount");
 var $computerCount = $("#computerCount");
 var $playerAnswer = $("#playerAnswer");
 var $submit = $("#submit");
+var $computerName = $("#computerName");
+var $playerName = $("#playerName");
+var $optionSection = $("#optionSection");
 var number1;
 var number2;
 var suit1;
@@ -32,9 +35,6 @@ var addition = 0;
 var multiplication = 0;
 var subtraction = 0;
 var arithmetic = 0;
-var computerName;
-var playerName;
-var optionsection;
 
 var audio = new Audio('./images/card.mp3');
 
@@ -379,6 +379,7 @@ $("#mathOptions").on('click', function() {
 $("#compare").on('click', function() {
   $("#options").css("display", "none");
   $("#integers").css("display", "block");
+  $("#faceCardDirections").css("display", "block");
   $("#compareDirections").css("display", "block");
   $("#one").css("display", "block");
   $("#two").css("display", "block");
@@ -404,6 +405,7 @@ $("#arithmetic").on('click', function() {
 
 $("#math").on('click', function() {
   $("#math").css("display", "none");
+  $("#faceCardDirections").css("display", "block");
   $("#integers").css("display", "block");
 })
 
@@ -430,16 +432,6 @@ $("#multiply").on('click', function() {
 $("#subtract").on('click', function() {
   $("#subtractDirections").css("display", "block");
   subtraction = 1;
-})
-
-$("#one").on('click', function() {
-  chosen = 1;
-  mathCheck();
-})
-
-$("#two").on('click', function() {
-  chosen = 2;
-  mathCheck();
 })
 
 }); //closes document ready
