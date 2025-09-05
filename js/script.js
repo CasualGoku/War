@@ -412,12 +412,14 @@ $("#math").on('click', function() {
 
 $("#no").on('click', function() {
   $("#integers").css("display", "none");
+  $("#refreshDirections").css("display", "block");
   $("#mathOptions").css("display", "none");
 })
 
 $("#yes").on('click', function() {
   $("#integers").css("display", "none");
   $("#mathOptions").css("display", "none");
+  $("#refreshDirections").css("display", "block");
   $("#integerDirections").css("display", "block");
   integerChoice = 1;
 })
