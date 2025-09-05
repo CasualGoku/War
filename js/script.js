@@ -18,8 +18,8 @@ var $playerCount = $("#playerCount");
 var $computerCount = $("#computerCount");
 var $playerAnswer = $("#playerAnswer");
 var $submit = $("#submit");
-var $computerName = $("#computerName");
-var $playerName = $("#playerName");
+var $name1 = $("#name1");
+var $name2 = $("#name2");
 var $optionSection = $("#optionSection");
 var number1;
 var number2;
@@ -94,8 +94,8 @@ $computerCount.html(computer.length);
 } 
 
 $draw.on('click', function() {
-  $("#computerName").css("color", "#000");
-  $("#playerName").css("color", "#000");
+  $("#name1").css("color", "#000");
+  $("#name2").css("color", "#000");
   $("#optionSection").css("display", "none");
   if (arithmetic == 1) {
     $("#submit").css("display", "block");
@@ -322,7 +322,7 @@ function mathCheck() {
       player.push(playedCards[i]);
     }
     $winner.html("Player Wins");
-    $player.css("border-color", "red");
+    $("#name1").css("color", "#50C878");
     $playerCount.html(player.length);
     playedCards=[];
   } else if (chosen != winner) {
@@ -330,7 +330,8 @@ function mathCheck() {
       computer.push(playedCards[i]);
     }
     $winner.html("Computer Wins");
-    $computer.css("border-color", "red");
+    $("#name2").css("color", "#50C878");
+    $("#name1").css("color", "red");
     $computerCount.html(computer.length);
     playedCards=[];
   }
@@ -411,10 +412,12 @@ $("#math").on('click', function() {
 
 $("#no").on('click', function() {
   $("#integers").css("display", "none");
+  $("#mathOptions").css("display", "none");
 })
 
 $("#yes").on('click', function() {
   $("#integers").css("display", "none");
+  $("#mathOptions").css("display", "none");
   $("#integerDirections").css("display", "block");
   integerChoice = 1;
 })

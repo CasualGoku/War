@@ -131,18 +131,14 @@ p {
 }
 
 .player {
-    border: solid 5px #000;
+    border: solid 4px #000;
     width: 15rem;
     height: 20rem;
     text-align: center;
 }
 
-.playerName {
-  font-size: 2rem;
-}
-
-.computerName {
-  font-size: 2rem;
+#name1, #name2 {
+  font-size: 2.2rem;
 }
 
 @media only screen and (max-width: 850px) {
